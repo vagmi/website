@@ -1,6 +1,7 @@
 body {
     color: #333;
 }
+
 header {
     margin-top: 2em;
     width: 100%;
@@ -9,23 +10,44 @@ header {
     justify-content: center;
 
 }
-header section {
-    width: 1200px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+@media only screen and (min-width: 1200px) {
+    header section {
+        width: 1200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    header section {
+        margin: 1em;
+    }
 }
 
-header section #about {
-    width: 580px; 
-    order: 1;
-    display: inline-block;
+@media only screen and (max-width: 1200px) {
+    header section #about h1 {
+        font-size: 6rem;
+        text-align: center;
+    }
+    header section #about h2 {
+        font-size: 3rem;
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    header section #about {
+        width: 580px; 
+        order: 1;
+        display: inline-block;
+    }
+    header section #about h1 {
+        font-size: 72px;
+    }
 }
 
 header section #about h1 {
     font-family: 'Lato', sans-serif;
     font-weight: 700;
-    font-size: 72px;
     margin: 0;
 }
 header section #about h2 {
@@ -37,11 +59,23 @@ header section #about h2 {
 .icons a {
     text-decoration: none;
 }
-svg.logo {
-    height: 35px;
-    margin-right: 1em;
+
+@media only screen and (min-width: 1200px) {
+    svg.logo {
+        height: 35px;
+        margin-right: 1em;
+    }
 }
 
+@media only screen and (max-width: 1200px) {
+    .icons {
+        text-align: center;
+    }
+    svg.logo {
+        height: 3em;
+        margin-right: 1em;
+    }
+}
 svg.logo path {
     fill: #D1CFDE;
 }
@@ -55,11 +89,24 @@ header section #about p {
 header section #about p a {
     color: #4B5997;
 }
-header section #hero {
-    display: inline-block;
-    width: 580px;
-    order: 2;
-    text-align: center
+@media only screen and (max-width: 1200px) {
+    header section #about p {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    header section #hero {
+        display: inline-block;
+        width: 580px;
+        order: 2;
+        text-align: center
+    }
+}
+@media only screen and (max-width: 1200px) {
+    header section #hero {
+        display: none;
+    }
 }
 
 article.videos {
@@ -70,8 +117,15 @@ article.videos {
     flex-direction: row;
 }
 
-article.videos section {
-    width: 1200px;
+@media only screen and (min-width: 1200px) {
+    article.videos section {
+        width: 1200px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    article.videos section {
+        margin: 0 1rem;
+    }
 }
 
 article.videos section h2 {
@@ -79,9 +133,17 @@ article.videos section h2 {
     font-weight: 700;
     color: #ffffff;
 }
-article.videos section .videos {
-    display: flex;
-    justify-content: space-between;
+
+@media only screen and (max-width: 1200px) {
+    article.videos section h2 {
+        font-size: 3rem;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    article.videos section .videos {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 article.videos section .videos .video {
@@ -99,6 +161,11 @@ article.videos section .videos .video p {
     text-align: center;
 }
 
+@media only screen and (max-width: 1200px) { 
+    article.videos section .videos .video p {
+        font-size: 2.5rem;
+    }
+}
 
 article.videos section .videos .video p > a,a:visited {
     color: #D1CFDE;
@@ -112,19 +179,41 @@ article.posts {
     flex-direction: row;
 }
 
-article.posts section {
-    width: 1200px;
+@media only screen and (min-width: 1200px) { 
+    article.posts section {
+        width: 1200px;
+    }
+}
+@media only screen and (max-width: 1200px) { 
+    article.posts section {
+        margin: 0 1rem;
+    }
 }
 
 article.posts section h2 {
     font-family: 'Lato', sans-serif;
     font-weight: 700;
-    font-size: 1.5em;
+}
+@media only screen and (min-width: 1200px) { 
+    article.posts section h2 {
+        font-size: 1.5em;
+    }
 }
 
-article.posts section .posts {
-    display: flex;
-    justify-content: space-between;
+
+@media only screen and (min-width: 1200px) { 
+    article.posts section .posts {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media only screen and (max-width: 1200px) { 
+    article.posts section h2 {
+        font-size: 3rem;
+    }
+    article.posts section .posts {
+        font-size: 2rem;
+    }
 }
 
 article.posts section .posts .post {
