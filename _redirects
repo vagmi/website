@@ -1,2 +1,2 @@
 # Redirect default Netlify subdomain to primary domain
-http://sad-swirles-080b95.netlify.com/* http://vagmim.in/:splat 301!
+https://sad-swirles-080b95.netlify.com/* https://vagmim.in/:splat 301!
