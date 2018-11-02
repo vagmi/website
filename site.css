@@ -131,12 +131,16 @@ article.videos {
 article.videos section h2 {
     font-family: 'Lato', sans-serif;
     font-weight: 700;
+}
+article.videos section h2 a {
     color: #ffffff;
+    text-decoration: none;
 }
 
 @media only screen and (max-width: 1200px) {
     article.videos section h2 {
         font-size: 3rem;
+        text-align: center;
     }
 }
 @media only screen and (min-width: 1200px) {
@@ -148,8 +152,8 @@ article.videos section h2 {
 
 article.videos section .videos .video {
     flex-grow: 1;
-    padding: 0.5em;
     padding-left: 0;
+    margin: 0 1em;
 }
 article.videos section .videos .video img {
     width: 100%;
@@ -194,6 +198,11 @@ article.posts section h2 {
     font-family: 'Lato', sans-serif;
     font-weight: 700;
 }
+article.posts section h2 a {
+    color: #333;
+    text-decoration: none;
+}
+
 @media only screen and (min-width: 1200px) { 
     article.posts section h2 {
         font-size: 1.5em;
@@ -210,6 +219,7 @@ article.posts section h2 {
 @media only screen and (max-width: 1200px) { 
     article.posts section h2 {
         font-size: 3rem;
+        text-align: center;
     }
     article.posts section .posts {
         font-size: 2rem;
