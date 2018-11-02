@@ -91,7 +91,7 @@ header section #about p a {
 }
 @media only screen and (max-width: 1200px) {
     header section #about p {
-        font-size: 2rem;
+        font-size: 2.8rem;
     }
 }
 
@@ -222,7 +222,7 @@ article.posts section h2 a {
         text-align: center;
     }
     article.posts section .posts {
-        font-size: 2rem;
+        font-size: 2.8rem;
     }
 }
 
