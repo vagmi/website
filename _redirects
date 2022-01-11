@@ -1,2 +1,3 @@
 # Redirect default Netlify subdomain to primary domain
 https://sad-swirles-080b95.netlify.com/* https://vagmim.in/:splat 301!
+/videos https://www.youtube.com/playlist?list=PLVbkwm50L3Yxy2LcthD8ln3JfvWVdF7Am
