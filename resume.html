@@ -9,16 +9,16 @@
       href="https://andremaha.github.io/md2html/css/foghorn.css"
     />
     <style>
-    @media screen {
-      .print-only {
-        display: none;
+      @media screen {
+        .print-only {
+          display: none;
+        }
       }
-    }
-    @media print {
-      .print-only {
-        display: block;
+      @media print {
+        .print-only {
+          display: block;
+        }
       }
-    }
     </style>
   </head>
   <body>
@@ -35,20 +35,21 @@
       | <a href="https://vagmi.medium.com/">Blog</a>
     </p>
     <p class="print-only">
-      For the latest version of the resume visit <a href="https://vagmi.ca/resume">https://vagmi.ca/resume</a>.
+      For the latest version of the resume visit
+      <a href="https://vagmi.ca/resume">https://vagmi.ca/resume</a>.
     </p>
     <p>
       Technology leader with over 20 years of experience building software and
       software teams. I enjoy building software as much as I enjoy building
       great teams.
     </p>
-    <hr/>
+    <hr />
     <p>
       <strong>Skills</strong>: Go, Rust, Typescript, Postgres, Distributed
       Systems, TDD, Kubernetes, Docker
     </p>
-    <hr/>
-    <h2>Tarka Labs, A division of Sedin Technologies</h2>
+    <hr />
+    <h2 class="glitch">Tarka Labs, A division of Sedin Technologies</h2>
     <p>2014-onwards</p>
     <p>
       I‘ve built this organization into a vibrant team of 35 members worldwide.
@@ -115,7 +116,7 @@
       other telemetry information like acceleration and so on to the location
       gateway.
     </p>
-    <hr/>
+    <hr />
     <h2>Independent Consultant</h2>
     <p>2013-2014</p>
     <p>
@@ -140,7 +141,7 @@
       We used Weka to ensure that the model on inference is very light and runs
       in the process.
     </p>
-    <hr/>
+    <hr />
     <h2>Thoughtworks - Lead Consultant</h2>
     <p>2012-2013</p>
     <h3>GruppoPAM - Buyer Dashboard</h3>
@@ -169,7 +170,7 @@
       multiple what-if scenarios and aid in their contract negotiation
       accordingly.
     </p>
-    <hr/>
+    <hr />
     <h2>Dharana Software / Artha42 Software - CTO &amp; Co-founder</h2>
     <p>(2009-2012)</p>
     <p>
@@ -187,7 +188,7 @@
       (Rails, MongoDB, jQuery) - A white labeled personal health record system
       with integration points to several HIS systems.
     </p>
-    <hr/>
+    <hr />
     <h2>SAP Labs India - Associate Architect</h2>
     <p>(2004-2009)</p>
     <p>
@@ -203,18 +204,28 @@
       (2003-2004) Was a part of the development support team for InstallShield
       suite of products.
     </p>
-    <hr/>
+    <hr />
     <h2>Bajaj Allianz General Insurance - IT Coordinator</h2>
     <p>
       (2002-2003) Was a part of the IT team building in-house tools with VB and
       SQL Server.
     </p>
-    <hr/>
+    <hr />
     <h2>Education</h2>
     <p>
       MBA - SP Jain Institute of Management and Research - 2007-2009 M.Sc (IT) -
       University of Madras - 2002-2003 B.Sc (Physics) - University of Madras -
       1998-2001
     </p>
+    <script src="https://unpkg.com/powerglitch@latest/dist/powerglitch.min.js"></script>
+    <script>
+      const elements = document.querySelectorAll("h2");
+      elements.forEach((elem) => {
+        PowerGlitch.glitch(elem, { playMode: "hover" });
+      });
+      document.querySelectorAll("h1").forEach((elem) => {
+        PowerGlitch.glitch(elem, { playMode: "hover" });
+      });
+    </script>
   </body>
 </html>
