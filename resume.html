@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Vagmi Mudumbai - Technology Leader and Entrepreur</title>
-    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
       type="text/css"
@@ -212,7 +212,7 @@
     </p>
     <hr />
     <h2>Education</h2>
-    <p>
+    <p style="margin-bottom: 1em;">
       MBA - SP Jain Institute of Management and Research - 2007-2009 M.Sc (IT) -
       University of Madras - 2002-2003 B.Sc (Physics) - University of Madras -
       1998-2001
@@ -226,6 +226,13 @@
       document.querySelectorAll("h1").forEach((elem) => {
         PowerGlitch.glitch(elem, { playMode: "hover" });
       });
+      let hasIntersected = (entries, observer) => {
+        entries.forEach((entry)=>{
+          PowerGlitch.glitch(entry.target, {timing: {iterations: 2}})
+        });
+      }
+      const observer = new IntersectionObserver(hasIntersected, {threshold: 1.0})
+      document.querySelectorAll("h2").forEach((elem) => {observer.observe(elem)});
     </script>
   </body>
 </html>
