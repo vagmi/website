@@ -19,6 +19,30 @@
           display: block;
         }
       }
+      @media (prefers-color-scheme: dark) {
+        html {
+          background-color: #000;
+        }
+        body {
+          background-color: #000;
+          color: #cecece;
+        } 
+        a {
+          color: #89c4f4;
+        }
+      }
+      @media (prefers-dark-interface) {
+        html {
+          background-color: #000;
+        }
+        body {
+          background-color: 000;
+          color: #cecece;
+        } 
+        a {
+          color: #89c4f4;
+        }
+      }
     </style>
   </head>
   <body>
@@ -228,7 +252,7 @@
       });
       let hasIntersected = (entries, observer) => {
         entries.forEach((entry)=>{
-          PowerGlitch.glitch(entry.target, {timing: {iterations: 2}})
+          PowerGlitch.glitch(entry.target, {timing: {iterations: 1}})
         });
       }
       const observer = new IntersectionObserver(hasIntersected, {threshold: 1.0})
