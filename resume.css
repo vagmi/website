@@ -23,7 +23,7 @@ body {
 }
 
 body {
-  font: 1.3em "JetBrains Mono", monospace;
+  font: 1em "JetBrains Mono", monospace;
   color: #333;
   line-height: 1.4;
 }
@@ -188,6 +188,9 @@ body#index li {
   }
 }
 @media print {
+  body {
+    font: 0.8em "JetBrains Mono", monospace;
+  }
   .print-only {
     display: block;
   }
@@ -199,6 +202,7 @@ body#index li {
   body {
     background-color: #000;
     color: #cecece;
+    font-size: 0.8em;
   }
   a {
     color: #89c4f4;
@@ -216,6 +220,7 @@ body#index li {
     color: #89c4f4;
   }
 }
-.social-links {
+.social-links p {
     font-size: 0.8em;
+    font-weight: 400;
 }
