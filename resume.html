@@ -14,23 +14,67 @@
     <title>Vagmi Mudumbai - Technology Leader and Entrepreur</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="stylesheet" type="text/css" href="resume.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script>
+        window.experience = [
+            {
+                "start": "2014",
+                "end": "now",
+                "company": "Tarka Labs",
+                "title": "CTO & Co-founder",
+            },
+            {
+                "start": "2013",
+                "end": "2014",
+                "company": "Independent Consultant",
+            },
+            {
+                "start": "2012",
+                "end": "2013",
+                "company": "Thoughtworks",
+                "title": "Lead Consultant",
+            },
+            {
+                "start": "2009",
+                "end": "2012",
+                "company": "Dharana Software / Artha42 Software",
+                "title": "CTO & Co-founder",
+            },
+            {
+                "start": "2004",
+                "end": "2009",
+                "company": "SAP Labs India",
+                "title": "Associate Architect",
+            },
+            {
+                "start": "2003",
+                "end": "2004",
+                "company": "SlashSupport - CSS Corp Company",
+                "title": "Engineer",
+            },
+            {
+                "start": "2002",
+                "end": "2003",
+                "company": "Bajaj Allianz General Insurance",
+                "title": "IT Coordinator",
+            },
+        ]
+    </script>
   </head>
   <body>
     <h1>Vagmi Mudumbai</h1>
     <div class="social-links">
       <p>
-        <a href="mailto:vagmi.mudumbai@gmail.com">vagmi.mudumbai@gmail.com</a>
-        | 📍 Fredericton, NB, 🇨🇦
-      </p>
-      <p>
-        <a href="https://github.com/vagmi">Github</a> |
-        <a href="https://www.linkedin.com/in/vagmi/">LinkedIn</a> |
-        <a href="https://vagmi.ca">Website</a> |
         <a
           href="https://www.youtube.com/playlist?list=PLVbkwm50L3Yxy2LcthD8ln3JfvWVdF7Am"
           >Talks</a
-        >
-        | <a href="https://vagmi.medium.com/">Blog</a>
+        > |
+        <a href="https://www.youtube.com/channel/UCz1EL7du5A7lhn0HCoUhoMQ">Youtube</a> |
+        <a href="https://vagmi.medium.com/">Blog</a> | 
+        <a href="https://www.linkedin.com/in/vagmi/">LinkedIn</a> |
+        <a href="https://github.com/vagmi">Github</a> |
+        <a href="https://vagmi.ca">Website</a> | 
+        Atlantic Time 🇨🇦
       </p>
     </div>
     <p class="print-only">
@@ -38,30 +82,97 @@
       <a href="https://vagmi.ca/resume">https://vagmi.ca/resume</a>.
     </p>
     <p>
-      Technology leader with over <b>20 years</b> of experience building
-      software and software teams. I can not only bring clarity and direction to 
-      the team but also will roll up my sleeves to implement it alongside the 
-      team when needed. I believe in servant-style leadership. 
-      I value honesty and candor in all communications.
+      I am a technology leader with over <b>20 years</b> of experience building
+      software and software teams. I believe in servant-style leadership. 
+      I value honesty and candor in all communications. I can not only bring 
+      clarity and direction to the team but also will roll up my sleeves to 
+      implement it alongside the team when needed.
     </p>
     <hr />
     <p>
-      <strong>Skills</strong>: Go, Rust, TypeScript, PostgreSQL, Distributed
-      Systems, TDD, Kubernetes, Docker
+    <strong>Leadership Skills</strong>: Software Architecture, Product Management, 
+     Stakeholder management, Scaling Teams, Mentoring, Coaching
+    </p>
+    <p>
+    <strong>Technical Skills</strong>: Rust, Go, Python, PyTorch, Deep Learning, Ruby, Rails, Typescript, 
+    Node, React/Next.js, Kubernetes, AWS, Docker, Terraform, CI/CD
     </p>
     <hr />
+    <div class="horizontal-timeline-container">
+    </div>
     <h2 class="glitch">Tarka Labs, A division of Sedin Technologies</h2>
     <p>CTO & Co-founder, 2014-onwards</p>
     <p>
-      I‘ve built this organization into a vibrant team of 35 members worldwide.
-      I hired engineers, designers, product managers and sales both in India and
-      Canada. Over these years, I have worked on the following projects as an
-      individual contributor. To know more about the portfolio of the projects
-      done by Tarka Labs, I’d recommend that you visit our
-      <a href="https://tarkalabs.com/projects/">portfolio page</a>.
+      I‘ve built this division into a vibrant team worldwide. I hired engineers, 
+      designers, product managers and sales both in Canada, US, Poland and
+      India. While I have provided technical and strategic guidance on most 
+      projects at Tarka Labs, I have hands-on contribution in the 
+      following projects. 
     </p>
+    <h2>&gt; Innovation Projects</h2>
+    <p>
+    I lead all the innovation projects in Sedin some of which have turned into products.
+
+    </p>
+    <h3>Kili - AI powered podcast tool for language learners</h3>
+    <p class="tech">Python, PyTorch, NLTK, Go, AWS, Terraform, NextJS</p>
+    <p> <a href="https://kili.tarkalabs.com/" target="_blank">kili.tarkalabs.com</a> - Kili is a 
+    language learning tool that uses an ensemble of models to help
+    you learn new human languages. I wanted to build an AI powered solution
+    that does not use the OpenAI APIs.</p>
+
+    <p>We primarily demonstrated for French language podcasts. We consumed RSS/ATOM feeds
+    to download podcast episodes. We then transcribe the text with whisper. While whisper
+    can do translations, we found that the translations were very poor. So we decided to
+    use another model. We also found that whisper does not tokenize sentences properly so we
+    reconstructed the podcast and sort of raced pointers to build our own sentence tokenizer
+    using NLTK. We then generated sentence embeddings with SBert and indexed them with QDrant.
+    We used a model called flan-t5 to generate translations to English, Spanish and German. We also
+    found that translating directly from French to German did not lead to good results but using English
+    as a bridge language yielded better translations. It started as my passion project to
+    learn french but the team really pitched in.</p>
+
+    <h3>Isai - Towards better Music Understanding</h3>
+    <p class="tech">PyTorch, Gradio, Huggingface Spaces, librosa, Deep Learning</p>
+    <p> <a href="https://huggingface.co/spaces/vagmi/isai" target="_blank">Isai Space</a> - Isai is 
+    my experiment with Music Information Retrieval</p>
+
+    <p>I built this space as a proof of concept to showcase that we can leverage ML for powering
+    better music search. I have played around with music based models primarily to build CNN based
+    classifiers. But this project was really cool. It allowed me to use a pretrained foundation model
+    called MERT-95M and then train a lot of smaller models that are just a couple of layers deep to
+    perform classification tasks.</p>
+
+    <h3>Semantic Music Search</h3>
+    <p class="tech">PyTorch, Transformers, BART, Qdrant, FFMpeg, AWS</p>
+    <p>This builds on the learnings of the MIR system.</p>
+
+    <p>I used the last layer of encoder part of the model <a href="https://huggingface.co/seungheondoh/lp-music-caps">LP-Music-Caps</a>. 
+    I then applied a mean pooling on the encoder's hidden state to generate semantic 
+    encodings for music. This allowed me to perform similarity search on music.</p>
+    
+    <h2>&gt; Client Projects</h2>
+    <h3>Songistry</h3>
+    <p class="tech">Product Management, Architecture, Rust, GraphQL, Elastic Search, AWS, Terraform, ffmpeg</p>
+    <p>
+        Songistry is a sync licensing company that acts as a market place to connect
+        music supervisors with catalog owners. In essence it is a music catalog manager
+        paired with a powerful search engine to discover and match music. We integrated
+        with a 3rd party Music Intelligence service called Cyanite to get music information retrieval
+        and music similarity search data. This is what led me to experiment with my own
+        MIR and music search implementations.
+    </p>
+    <h3>Khwale - Consulting CTO</h3>
+    <p class="tech">Product Management, Architecture, Partner Management</p>
+    <p>
+    Khwale is a south african record label looking to build its own distribution platform.
+    I worked with the founders to setup the product roadmap and to prioritize the features
+    that can be executed by their in-house development team. We also evaluated, third
+    party distributors to provide a white label experience for their customers.
+    </p>
+
     <h3>QSR Chain Restaurant - Architecture (Store Platform)</h3>
-    <p>Kotlin, Terraform, CircleCI pipelines, Docker, AWS</p>
+    <p class="tech">Architecture, Kotlin, Terraform, CircleCI pipelines, Docker, AWS</p>
     <p>
     I am working with a client in the QSR (Quick Service Restaurant) space that
     owns a chain of about 2200 restaurants in the US. They are in the process of
@@ -72,7 +183,7 @@
     to ensure that both the builds and workloads are secure.
     </p>
     <h3>Tunecore - Platform Architecture (Distribution)</h3>
-    <p>(Ruby on Rails, Go, PostgreSQL, AWS services)</p>
+    <p class="tech">Software Architecture, Platform engineering, SRE, Ruby on Rails, Go, PostgreSQL, AWS services</p>
     <p>
       Tunecore helps artists sell their music worldwide. It takes albums and
       singles from artists all around the world and distributes them to over 50
@@ -93,15 +204,15 @@
       cluster.
     </p>
     <h3>Klstr</h3>
-    <p>(Go, Kubernetes, Drone.io)</p>
+    <p class="tech">Product Management, Go, Terraform, Kubernetes, Drone.io</p>
     <p>
     Klstr was planned to be a certified CNCF Kubernetes Distribution that
     primarily was targeted at on-prem deployments. We built operators to support
     different application deployment patterns and custom pipelines for supporting
     gitops using Drone. 
     </p>
-    <h3>Moove - (Location and Clustering services)</h3>
-    <p>(Go, Ruby on Rails, Android, React, Google Maps SDK, OSRM)</p>
+    <h3>Moove - Location and Clustering services</h3>
+    <p class="tech">Software Architecture, Go, Ruby on Rails, Android, React, Google Maps SDK, OSRM</p>
     <p>
       Moove was a startup in India focused on providing transport and employee
       mobility solutions for large software companies. The companies in India
@@ -123,14 +234,14 @@
       routes on Google Maps.
     </p>
     <h3>PacketMedia - (SMS Marketing tool)</h3>
-    <p>(Golang, Elixir, Phoenix, Postgresql, React)</p>
+    <p class="tech">Golang, Elixir, Phoenix, Postgresql, React</p>
     <p>
       PacketMedia was SMS marketing solution and used a Go service for
       interfacing with SMSC gateways and used a Phoenix app to manage campaigns
       and the CRM dashboard.
     </p>
     <h3>Modus - (Vehicle fleet tracking)</h3>
-    <p>(React, Google Maps, Rails, Elixir, Postgres)</p>
+    <p class="tech">React, Google Maps, Rails, Elixir, Postgres</p>
     <p>
       We used React over a Rails app for vehicle fleet tracking. We used Elixir
       for the location service. The data for locations came from an OBD device
@@ -148,27 +259,27 @@
       Driven Development.
     </p>
     <h3>Qube Cinemas - Keypass</h3>
-    <p>(Node, AngularJS, JS)</p>
+    <p class="tech">Node, AngularJS, JS</p>
     <p>
       It was a small microservice and a dashboard app for Qube cinemas to manage
       and pull down keys for the DRM movie projectors.
     </p>
     <h3>CTO, Reduce Data (Ad Tech)</h3>
-    <p>(Java, Netty, Clojure, Weka, Ember, Play, PostgreSQL, Cassandra)</p>
+    <p class="tech">Java, Netty, Clojure, Weka, Ember, Play, PostgreSQL, Cassandra, Machine Learning</p>
     <p>
       Built a demand side Real Time Bidding platform. Our campaigns were managed
       with a Java Play app on a PostgreSQL database. Our click stream
-      information was stored in Cassandra. We sampled the data and built
+      information was stored in Cassandra. I sampled the data and built
       ensemble models on Weka (SGD, Random Forest) to classify potential clicks.
-      We used Weka to ensure that the model on inference is very light and runs
-      in the process.
+      I used Weka to ensure that the model on inference is very light and runs
+      in the process on the hot path for RTB Bidding. 
     </p>
     <hr />
     <h2>Thoughtworks - Lead Consultant</h2>
     <p>2012-2013</p>
     <h3>GruppoPAM - Buyer Dashboard</h3>
-    <p>
-      (Java/Spring, JDBI, Postgres, Teradata, Rails, jQuery, D3, Marionette)
+    <p class="tech">
+      Java/Spring, JDBI, Postgres, Teradata, Rails, jQuery, D3, Marionette
     </p>
     <p>
       We built a buyer performance dashboard for an Italian retail chain. It
@@ -178,7 +289,7 @@
       build custom reports. We used D3 for all the data visualization.
     </p>
     <h3>GruppoPAM - Assortment Planning</h3>
-    <p>(Clojure, PostgreSQL, Neo4j)</p>
+    <p class="tech">Clojure, PostgreSQL, Neo4j</p>
     <p>
       This was a microservice that did what-if analysis on different
       profitability profiles based configuration such as logistics, format of
@@ -201,13 +312,15 @@
       training workshops.
     </p>
     <h3>AuditionMagic</h3>
-    <p>
-      (Rails, jQuery, HTML5 Video, PostgreSQL) - A HTML5 based in-video tagging
-      solution.
+    <p class="tech">
+      Rails, jQuery, HTML5 Video, PostgreSQL - 
     </p>
+    <p>A HTML5 based in-video tagging solution. </p>
     <h3>Apollo HealthHiway</h3>
-    <p>
-      (Rails, MongoDB, jQuery) - A white labeled personal health record system
+    <p class="tech">
+      Rails, MongoDB, jQuery
+    </p>
+    <p>A white labeled personal health record system
       with integration points to several HIS systems.
     </p>
     <hr />
@@ -220,7 +333,7 @@
       framework on Adobe Flex closely mimicking Eclipse’s OSGi model for
       plugins.
     </p>
-    <p>(Java, C#, Eclipse, Eclipse RCP, Visual Studio VSIP, C++)</p>
+    <p class="tech">(Java, C#, Eclipse, Eclipse RCP, Visual Studio VSIP, C++)</p>
     <h2>SlashSupport - CSS Corp Company - Engineer</h2>
     <p>
       (2003-2004) Was a part of the development support team for InstallShield
