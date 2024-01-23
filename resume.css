@@ -207,7 +207,7 @@ span.mono {
 }
 @media print {
   body {
-    font: 0.8em "Montserrat", sans-serif;
+    font: 0.7em "Montserrat", sans-serif;
   }
   .print-only {
     display: block;

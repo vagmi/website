@@ -87,7 +87,7 @@
       I am a technology leader with over <b>20 years</b> of experience building
       software and software teams. I believe in servant-style leadership. 
       I value honesty and candor in all communications. I can not only bring 
-      clarity and direction to the team but also will roll up my sleeves to 
+      clarity and direction to the team but also roll up my sleeves to 
       implement it alongside the team when needed.
     </p>
     <hr />
@@ -105,24 +105,24 @@
     </div>
 
     <h2>Vivari AI Corp</h2>
-    <p>Co-founder, Oct 2023-now</p>
+    <p>Co-founder, Oct 2023-now, Fredericton, NB, Canada</p>
     <p class="tech">OpenAI API, HuggingFace, Qdrant, RAG, PyTorch, ollama, vllm, Rust, Next.js</p>
     <p>
     Vivari aims to be an alternative to Langchain in Rust. This is my passion project
     and I have been streaming my development of this project on Youtube 
     <a href="https://www.youtube.com/@vagmi/streams">streams</a>. Since this place has become too crowded and 
-    OpenAI released their Assistants API, I have started to focus on other aspects of LLM integrations. I learnt
-    a ton of stuff about LLMs, RAG, function calling, Vector Embeddings and orchestrating LLM API 
-    calls with OpenAI and serving models locally with ollama or vllm.
+    OpenAI released its Assistants API, I have started to focus on other aspects of LLM integrations. I learned
+    a ton of stuff about LLMs, RAG, function calling, Vector Embeddings, orchestrating LLM API 
+    calls with OpenAI and serving models locally with TGI, ollama or vllm.
     </p>
     <hr />
     <h2 class="glitch">Tarka Labs, A division of Sedin Technologies</h2>
-    <p>CTO & Co-founder, 2014-now</p>
+    <p>CTO & Co-founder, 2014-now, Fredericton, NB, Canada</p>
     <p>
       I‘ve built this division into a vibrant team worldwide. I hired engineers, 
-      designers, product managers and sales both in Canada, US, Poland and
+      designers, product managers and sales in Canada, the US, Poland and
       India. While I have provided technical and strategic guidance on most 
-      projects at Tarka Labs, I have hands-on contribution in the 
+      projects at Tarka Labs, I have hands-on contribution to the 
       following projects. 
     </p>
     <h2>&gt; Innovation Projects</h2>
@@ -142,7 +142,7 @@
     <p>I consumed RSS/ATOM feeds to download podcast episodes. I then transcribe the text with whisper. While whisper
     can do translations, I found that the quality of translations was quite poor. So I decided to
     use another model. I also found that whisper does not tokenize sentences properly. So, I 
-    reconstructed the sentences from the transcript using a our custom sentence tokenizer
+    reconstructed the sentences from the transcript using our custom sentence tokenizer
     using NLTK. I then generated sentence embeddings with SBert and indexed them with QDrant.
     I used a model called <span class="mono">flan-t5</span> to generate translations to English, Spanish and German. I also
     found that translating directly from French to German did not lead to good results but using English
@@ -154,8 +154,8 @@
     my experiment with Music Information Retrieval</p>
 
     <p>I built this space as a proof of concept to showcase that we can leverage ML for powering
-    better music search. I have played around with music based models primarily to build CNN based
-    classifiers. But this project was really cool. It allowed me to use a pretrained foundation model
+    better music search. I have played around with music-based models primarily to build CNN based
+    classifiers. It allowed me to use a pre-trained foundation model
     called MERT-95M and then train a lot of smaller models that are just a couple of layers deep to
     perform classification tasks.</p>
 
@@ -163,16 +163,16 @@
     <p class="tech">PyTorch, Transformers, BART, Qdrant, FFMpeg, AWS</p>
     <p>This builds on the learnings of the MIR system.</p>
 
-    <p>I used the last layer of encoder part of the model <a href="https://huggingface.co/seungheondoh/lp-music-caps">LP-Music-Caps</a>. 
+    <p>I used the last layer of the encoder part of the model <a href="https://huggingface.co/seungheondoh/lp-music-caps">LP-Music-Caps</a>. 
     I then applied a mean pooling on the encoder's hidden state to generate semantic 
-    encodings for music. This allowed me to perform similarity search on music.</p>
+    encodings for music. This allowed me to perform a similarity search on music.</p>
     
     <h2>&gt; Client Projects</h2>
     <h3>Songistry</h3>
     <p class="tech">Product Management, Architecture, Rust, GraphQL, Elastic Search, AWS, Terraform, ffmpeg</p>
     <p>
-        Songistry is a sync licensing company that acts as a market place to connect
-        music supervisors with catalog owners. In essence it is a music catalog manager
+        Songistry is a sync licensing company that acts as a marketplace to connect
+        music supervisors with catalog owners. In essence, it is a music catalog manager
         paired with a powerful search engine to discover and match music. We integrated
         with a 3rd party Music Intelligence service called Cyanite to get music information retrieval
         and music similarity search data. This is what led me to experiment with my own
@@ -181,10 +181,10 @@
     <h3>Khwale - Consulting CTO</h3>
     <p class="tech">Product Management, Architecture, Partner Management</p>
     <p>
-    Khwale is a south african record label looking to build its own distribution platform.
+    Khwale is a South African record label looking to build its distribution platform.
     I worked with the founders to setup the product roadmap and to prioritize the features
-    that can be executed by their in-house development team. We also evaluated, third
-    party distributors to provide a white label experience for their customers.
+    that can be executed by their in-house development team. We also evaluated, third-party 
+    distributors to provide a white-label experience for their customers.
     </p>
 
     <h3>QSR Chain Restaurant - Architecture (Store Platform)</h3>
@@ -192,11 +192,10 @@
     <p>
     I worked with a client in the QSR (Quick Service Restaurant) space that
     owns a chain of about 2200 restaurants in the US. They were in the process of
-    switching their PoS solution and my team is built a platform that would abstract
-    over the current PoS and the new PoS system. I have largely been taking care
-    of the platform engineering aspects by setting up CircleCI pipelines, Terraform and 
-    terragrunt modules that run on a self-hosted runner on AWS. We used secrets manager and 
-    specific task roles to ensure that both the builds and workloads are secure.
+    switching their PoS solution and my team built a platform that would abstract
+    over the current PoS and the new PoS system. I set up CircleCI pipelines with self hosted
+    runners, Terraform and terragrunt modules to set up a ECS-based workloads with a specific 
+    focus on security and scalability.
     </p>
     <h3>Tunecore - Platform Architecture (Distribution)</h3>
     <p class="tech">Software Architecture, Platform engineering, SRE, Ruby on Rails, Go, PostgreSQL, AWS services</p>
@@ -232,7 +231,7 @@
     <p>
       Moove was a startup in India focused on providing transport and employee
       mobility solutions for large software companies. The companies in India
-      run various shifts 24/7 and provide pick and drop services for their
+      run various shifts 24/7 and provide pick-up and drop services for their
       employees. This involved building both the driver and the employee app.
       This is very similar to the Uber app sans the payment.
     </p>
@@ -244,10 +243,14 @@
       the backend.
     </p>
     <p>
-      We moved away from using Google Maps SDK for route planning to using OSRM.
-      Google Maps SDK even with its distance matrix endpoints was too slow for
-      the scale of Moove. We moved to OSRM for route planning and visualized the
-      routes on Google Maps.
+      We moved away from using Google Maps SDK for route planning to using OSRM with
+      OpenStreetMaps data. Google Maps SDK even with its distance matrix endpoints 
+      was too slow for the scale of Moove. We moved to OSRM for route planning and built our
+    own class of greedy algorithms to account for given logistical and legal constraints
+    around who gets to travel alone (senior managers etc) in which vehicles and so on.
+    Once these routes were planned, we visualized them on on a map. The planner could
+    then drag and drop the routes or people and recompute the route. We transformed a harrowing
+    30-minute manual activity for each shift to an almost instant automated process.
     </p>
     <h3>PacketMedia - (SMS Marketing tool)</h3>
     <p class="tech">Golang, Elixir, Phoenix, Postgresql, React</p>
@@ -267,7 +270,7 @@
     </p>
     <hr />
     <h2>Independent Consultant</h2>
-    <p>2013-2014</p>
+    <p>2013-2014, Chennai, India</p>
     <p>
       I was the consulting CTO of Reduce Data and was working building the
       keypass system for Qube cinemas. I also conducted independent workshops
@@ -292,7 +295,7 @@
     </p>
     <hr />
     <h2>Thoughtworks - Lead Consultant</h2>
-    <p>2012-2013</p>
+    <p>2012-2013, Chennai, India</p>
     <h3>GruppoPAM - Buyer Dashboard</h3>
     <p class="tech">
       Java/Spring, JDBI, Postgres, Teradata, Rails, jQuery, D3, Marionette
@@ -321,7 +324,7 @@
     </p>
     <hr />
     <h2>Dharana Software / Artha42 Software - CTO &amp; Co-founder</h2>
-    <p>(2009-2012)</p>
+    <p>2009-2012, Chennai India</p>
     <p>
       I ran a digital agency building web and mobile applications. I also
       conducted Ruby on Rails trainings both as independent and in-house
@@ -341,7 +344,7 @@
     </p>
     <hr />
     <h2>SAP Labs India - Associate Architect</h2>
-    <p>(2004-2009)</p>
+    <p>2004-2009, Bangalore, India</p>
     <p>
       I was a part of the developer tools ecosystem and was on a team building
       Visual Studio VSIP extensions and Eclipse (SAP Netweaver Development
@@ -351,14 +354,16 @@
     </p>
     <p class="tech">(Java, C#, Eclipse, Eclipse RCP, Visual Studio VSIP, C++)</p>
     <h2>SlashSupport - CSS Corp Company - Engineer</h2>
+    <p>2003-2004, Chennai, India</p>
     <p>
-      (2003-2004) Was a part of the development support team for InstallShield
+      Was a part of the development support team for InstallShield
       suite of products.
     </p>
     <hr />
     <h2>Bajaj Allianz General Insurance - IT Coordinator</h2>
+    <p>2002-2003, Chennai, India</p>
     <p>
-      (2002-2003) Was a part of the IT team building in-house tools with VB and
+      Was a part of the IT team building in-house tools with VB and
       SQL Server.
     </p>
     <hr />
